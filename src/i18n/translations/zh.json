@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "workshop": "工作室",
+    "products": "产品"
+  },
+  "contact": {
+    "phone": "437-599-6297",
+    "address": "Suite 204, 277 Lakeshore Rd E, Oakville, L6J 6J3",
+    "email": "yuniquecandle0218@gmail.com"
+  },
+  "footer": {
+    "copyright": " 2024 Yunique Scents Lab.",
+    "qrCodes": "扫描二维码",
+    "allRightsReserved": "版权所有"
+  },
+  "products": {
+    "comingSoon": "即将推出"
+  },
+  "workshop": {
+    "title": "探索香水艺术",
+    "description": "加入我们的专属工作坊，学习制作专属于你的香水。我们的香水专家将指导你选择和调配优质原料，创造独一无二的香氛。",
+    "whatYouLearn": "你将学到",
+    "learningPoints": {
+      "1": "了解香水家族和香调",
+      "2": "精油调配技巧",
+      "3": "香水构成原理",
+      "4": "创作个人香水"
+    },
+    "notice": "每个工作室限制6人参加，确保个性化指导。我们提供所有材料和工具，你可以带走自制香水。",
+    "booking": {
+      "selfBooking": {
+        "title": "个人预约",
+        "duration": "时长：2小时",
+        "price": "价格：$188",
+        "bottleSize": "香水容量：30ml"
+      },
+      "giftBooking": {
+        "title": "赠送礼物",
+        "description": "详情请咨询"
+      }
+    }
+  },
+  "qrFloat": {
+    "wechat": "微信",
+    "instagram": "Instagram"
+  }
+}

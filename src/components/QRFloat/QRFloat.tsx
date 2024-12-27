@@ -17,7 +17,7 @@ interface QRCode {
 
 const QRFloat = () => {
   const { t } = useTranslation();
-  const { isOpen, openQRFloat, closeQRFloat } = useQRFloat();
+  const { isOpen, toggleQRFloat, closeQRFloat } = useQRFloat();
   const [activeQR, setActiveQR] = useState<QRType>('wechat');
 
   const qrCodes: Record<QRType, QRCode> = {
@@ -36,7 +36,7 @@ const QRFloat = () => {
   return (
     <div className="fixed bottom-4 right-4 z-50">
       <button
-        onClick={openQRFloat}
+        onClick={toggleQRFloat}
         className="bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors"
       >
         <QrCode className="w-6 h-6" />

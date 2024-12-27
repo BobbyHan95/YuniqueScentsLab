@@ -3,19 +3,21 @@ import { createContext, useContext, useState, ReactNode } from 'react';
 interface QRFloatContextType {
   isOpen: boolean;
   openQRFloat: () => void;
+  toggleQRFloat: () => void;
   closeQRFloat: () => void;
 }
 
 export const QRFloatContext = createContext<QRFloatContextType | undefined>(undefined);
 
 export const QRFloatProvider = ({ children }: { children: ReactNode }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const openQRFloat = () => setIsOpen(true);
+  const toggleQRFloat = () => setIsOpen(!isOpen);
   const closeQRFloat = () => setIsOpen(false);
 
   return (
-    <QRFloatContext.Provider value={{ isOpen, openQRFloat, closeQRFloat }}>
+    <QRFloatContext.Provider value={{ isOpen, openQRFloat, toggleQRFloat, closeQRFloat }}>
       {children}
     </QRFloatContext.Provider>
   );

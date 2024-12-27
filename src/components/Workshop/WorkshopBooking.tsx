@@ -16,7 +16,7 @@ const WorkshopBooking = () => {
             <img
               src={workshopReserveNow}
               alt="Book for Yourself"
-              className="w-full aspect-[16/9] object-cover"
+              className="w-full aspect-[16/9] object-cover brightness-120 contrast-125"
             />
             <div className="absolute inset-0 bg-black/20"></div>
           </div>
@@ -43,7 +43,7 @@ const WorkshopBooking = () => {
               alt="Send as a Gift"
               className="w-full aspect-[16/9] object-cover"
             />
-            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0"></div>
           </div>
           <div className="p-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">{t('workshop.booking.giftBooking.title')}</h3>

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Globe } from 'lucide-react';
+import TabIcon from '../../assets/TabIcon.jpg';
 
 const Header = () => {
   const { i18n } = useTranslation();
@@ -14,8 +15,7 @@ const Header = () => {
         <div className="h-16 flex items-center justify-between">
           {/* Logo area */}
           <div className="w-12 sm:w-20 flex items-center">
-            <div className="w-2 h-2 rounded-full bg-[var(--color-primary)]"></div>
-            <div className="w-2 h-2 rounded-full bg-[var(--color-secondary)] ml-1"></div>
+            <img src={TabIcon} alt="Logo" className="h-8 w-8 object-contain" />
           </div>
           
           {/* Title */}

@@ -19,7 +19,7 @@
   "workshop": {
     "title": "Discover the Art of Perfumery",
     "description": "Join our exclusive workshops where you'll learn the secrets of crafting your own signature scent. Our expert perfumers will guide you through the intricate process of selecting and blending premium ingredients to create a fragrance that's uniquely yours.",
-    "whatYouLearn": "What You'll Learn",
+    "whatYouLearn": "What You'll Explore",
     "learningPoints": {
       "1": "Understanding fragrance families and notes",
       "2": "Essential oil blending techniques",
@@ -30,13 +30,13 @@
     "booking": {
       "selfBooking": {
         "title": "Book for Yourself",
-        "duration": "Duration: 2 hours",
-        "price": "Price: $188",
-        "bottleSize": "Bottle Size: 30ml"
+        "duration": "Duration: ~2 hours",
+        "price": "Price: $69 / $79",
+        "bottleSize": "Size: 30ml / 50ml"
       },
       "giftBooking": {
         "title": "Send as a Gift",
-        "description": "DM for details"
+        "description": "Scan to book"
       }
     }
   },

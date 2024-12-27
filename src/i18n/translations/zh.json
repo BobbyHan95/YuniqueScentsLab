@@ -30,13 +30,13 @@
     "booking": {
       "selfBooking": {
         "title": "个人预约",
-        "duration": "时长：2小时",
-        "price": "价格：$188",
-        "bottleSize": "香水容量：30ml"
+        "duration": "时长：~2小时",
+        "price": "价格：$69 / $79",
+        "bottleSize": "香水容量：30ml / 50ml"
       },
       "giftBooking": {
         "title": "赠送礼物",
-        "description": "详情请咨询"
+        "description": "详情请扫码咨询"
       }
     }
   },

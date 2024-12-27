@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #EFDEB0;
+  --color-secondary: #D7ECF1;
+  --color-primary-light: rgb(239 222 176 / 0.5);  /* EFDEB0 with 50% opacity */
+  --color-primary-lighter: rgb(239 222 176 / 0.3); /* EFDEB0 with 30% opacity */
+  --color-primary-dark: rgb(239 222 176 / 0.7);    /* EFDEB0 with 70% opacity */
+  --color-secondary-light: rgb(215 236 241 / 0.5); /* D7ECF1 with 50% opacity */
+  --color-secondary-lighter: rgb(215 236 241 / 0.3); /* D7ECF1 with 30% opacity */
+  --color-secondary-dark: rgb(215 236 241 / 0.9);    /* D7ECF1 with 90% opacity */
+}

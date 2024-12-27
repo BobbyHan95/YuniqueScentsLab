@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -6,7 +5,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-[#D7ECF1]/50 py-4">
+    <footer className="bg-[var(--color-secondary-light)] py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:space-x-8">

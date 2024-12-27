@@ -1,17 +1,26 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import instagramIcon from '../assets/instagram.svg';
+import instagramIcon from '../../assets/instagram.svg';
 import { QrCode } from 'lucide-react';
-import wechatIcon from '../assets/wechat.svg';
-import instagramQR from '../assets/instagram-qr.jpg';
-import wechatQR from '../assets/wechat-qr.jpg';
+import wechatIcon from '../../assets/wechat.svg';
+import instagramQR from '../../assets/instagram-qr.jpg';
+import wechatQR from '../../assets/wechat-qr.jpg';
+import { useQRFloat } from '../../context/QRFloatContext';
+
+type QRType = 'wechat' | 'instagram';
+
+interface QRCode {
+  image: string;
+  title: string;
+  icon: JSX.Element;
+}
 
 const QRFloat = () => {
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(true);
-  const [activeQR, setActiveQR] = useState('wechat');
+  const { isOpen, openQRFloat, closeQRFloat } = useQRFloat();
+  const [activeQR, setActiveQR] = useState<QRType>('wechat');
 
-  const qrCodes = {
+  const qrCodes: Record<QRType, QRCode> = {
     wechat: {
       image: wechatQR,
       title: t('qrFloat.wechat'),
@@ -27,7 +36,7 @@ const QRFloat = () => {
   return (
     <div className="fixed bottom-4 right-4 z-50">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={openQRFloat}
         className="bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors"
       >
         <QrCode className="w-6 h-6" />
@@ -40,7 +49,7 @@ const QRFloat = () => {
               {Object.entries(qrCodes).map(([key, { title, icon }]) => (
                 <button
                   key={key}
-                  onClick={() => setActiveQR(key)}
+                  onClick={() => setActiveQR(key as QRType)}
                   className={`p-2 rounded-md transition-colors ${
                     activeQR === key
                       ? 'bg-indigo-100 text-indigo-600'
@@ -53,7 +62,7 @@ const QRFloat = () => {
               ))}
             </div>
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={closeQRFloat}
               className="text-gray-500 hover:text-gray-700"
             >
               ✕

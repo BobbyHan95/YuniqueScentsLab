@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-[var(--color-primary-light)] to-[var(--color-secondary-light)] shadow-sm">
+    <header className="bg-gradient-to-r from-[var(--color-primary-lighter)] to-[var(--color-secondary-lighter)] shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
           {/* Logo area */}

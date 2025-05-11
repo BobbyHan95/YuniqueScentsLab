@@ -1,8 +1,4 @@
 {
-  "navigation": {
-    "workshop": "Workshop",
-    "products": "Products"
-  },
   "contact": {
     "phone": "437-599-6297",
     "address": "Suite 204, 277 Lakeshore Rd E, Oakville, L6J 6J3",
@@ -14,6 +10,9 @@
     "allRightsReserved": "All rights reserved"
   },
   "products": {
+    "title": "Shop",
+    "subtitle1": "SHOP OUR HANDCRAFTED FRAGRANCES AND CANDLES.",
+    "subtitle2": "UNIQUE SCENTS, READY TO ENJOY OR GIFT.",
     "comingSoon": "Coming Soon"
   },
   "workshop": {
@@ -43,5 +42,20 @@
   "qrFloat": {
     "wechat": "WeChat",
     "instagram": "Instagram"
+  },
+  "header": {
+    "title": "Yunique Scents Lab.",
+    "menu": {
+      "home": "HOME",
+      "workshops": "WORKSHOPS",
+      "products": "PRODUCTS",
+      "about": "ABOUT"
+    }
+    },
+  "home": {
+    "heroTitle1": "Craft Your",
+    "heroTitle2": "Scented Story",
+    "heroTitle3": "with Yunique",
+    "heroTitle4": "Scents Lab"
   }
 }

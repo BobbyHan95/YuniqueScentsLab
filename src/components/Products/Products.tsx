@@ -4,13 +4,23 @@ const Products = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="container mx-auto px-4 py-32 max-w-6xl">
-      <div className="flex items-center justify-center">
-        <h2 className="text-4xl font-bold text-gray-800 bg-[#EFDEB0]/30 px-8 py-4 rounded-lg">
-          {t('products.comingSoon')}
-        </h2>
+    <section className="min-h-[60vh] bg-[#f7eddd] w-full">
+      <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
+        {/* 左上大标题 */}
+        <h1 className="text-6xl md:text-7xl font-serif font-semibold text-[#23231f] mb-8">{t('products.title')}</h1>
+        {/* 居中副标题 */}
+        <div className="flex flex-col items-center">
+          <div className="text-center">
+            <div className="font-bold tracking-wide text-lg md:text-xl text-[#23231f] mb-2 uppercase">
+              {t('products.subtitle1')}
+            </div>
+            <div className="font-bold tracking-wide text-lg md:text-xl text-[#23231f] uppercase">
+              {t('products.subtitle2')}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

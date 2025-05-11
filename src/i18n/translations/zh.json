@@ -1,8 +1,4 @@
 {
-  "navigation": {
-    "workshop": "工作室",
-    "products": "产品"
-  },
   "contact": {
     "phone": "437-599-6297",
     "address": "Suite 204, 277 Lakeshore Rd E, Oakville, L6J 6J3",
@@ -14,6 +10,9 @@
     "allRightsReserved": "版权所有"
   },
   "products": {
+    "title": "产品",
+    "subtitle1": "选购我们的手工香氛与蜡烛。",
+    "subtitle2": "独特香气，随时享用或送礼。",
     "comingSoon": "即将推出"
   },
   "workshop": {
@@ -43,5 +42,20 @@
   "qrFloat": {
     "wechat": "微信",
     "instagram": "Instagram"
+  },
+  "header": {
+    "title": "Yunique Scents Lab.",
+    "menu": {
+      "home": "首页",
+      "workshops": "调香工坊",
+      "products": "产品",
+      "about": "关于"
+    }
+    },
+  "home": {
+    "heroTitle1": "定制你的",
+    "heroTitle2": "专属香气故事",
+    "heroTitle3": "尽在 Yunique",
+    "heroTitle4": "香氛实验室"
   }
 }

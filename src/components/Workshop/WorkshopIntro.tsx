@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import introWorkshop from '../../assets/intro_workshop.png';
+import introWorkshop from '../../assets/home_image1.png';
 
 const WorkshopIntro = () => {
   const { t } = useTranslation();

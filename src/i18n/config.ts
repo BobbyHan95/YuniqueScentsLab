@@ -10,7 +10,7 @@ i18n
       en: { translation: en },
       zh: { translation: zh }
     },
-    lng: 'en', // Set default language
+    lng: (typeof navigator !== 'undefined' && navigator.language.toLowerCase().startsWith('zh')) ? 'zh' : 'en', // 自动根据浏览器语言
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false

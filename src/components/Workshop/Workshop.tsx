@@ -1,12 +1,24 @@
 import WorkshopIntro from './WorkshopIntro';
-import WorkshopBooking from './WorkshopBooking';
+import WorkshopPerfume from './WorkshopPerfume';
+import WorkshopCarDiffuser from './WorkshopCarDiffuser';
+import WorkshopCandle from './WorkshopCandle';
 
 const Workshop = () => {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-6xl">
-      <WorkshopIntro />
-      <WorkshopBooking />
-    </div>
+    <>
+      <div id="workshop-intro">
+        <WorkshopIntro />
+      </div>
+      <div id="workshop-perfume" className="scroll-mt-24">
+        <WorkshopPerfume />
+      </div>
+      <div id="workshop-car-diffuser" className="scroll-mt-24">
+        <WorkshopCarDiffuser />
+      </div>
+      <div id="workshop-candle" className="scroll-mt-24">
+        <WorkshopCandle />
+      </div>
+    </>
   );
 };
 

@@ -4,10 +4,10 @@ const Products = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-[60vh] bg-[#f7eddd] w-full">
+    <section className="min-h-[120vh] bg-[#f7eddd] w-full">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
         {/* 左上大标题 */}
-        <h1 className="text-6xl md:text-7xl font-serif font-semibold text-[#23231f] mb-8">{t('products.title')}</h1>
+        <h1 className="flex items-center text-6xl md:text-7xl font-serif justify-center font-semibold text-[#23231f] mb-8">{t('products.title')}</h1>
         {/* 居中副标题 */}
         <div className="flex flex-col items-center">
           <div className="text-center">

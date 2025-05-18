@@ -82,7 +82,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       <img
         src={images[current]}
         alt={`carousel-img-${current + 1}`}
-        className={`rounded-lg shadow-lg max-h-[340px] w-auto object-cover transition-all duration-500 ${fade ? 'opacity-100' : 'opacity-0'} ${imgClassName}`}
+        className={`rounded-lg shadow-lg max-h-[450px] w-auto object-cover transition-all duration-500 ${fade ? 'opacity-100' : 'opacity-0'} ${imgClassName}`}
         style={{ minWidth: 240 }}
         draggable={false}
       />
